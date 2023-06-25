@@ -26,3 +26,19 @@
   border-radius: 50%;
 }
 
+.btn-outline-dark {
+  color: var(--bs-btn-color);
+  background-color: var(--bs-btn-bg);
+  border-color: var(--bs-btn-border-color);
+  font-size: medium;
+  color: var(--bs-btn-active-bg);
+}
+
+.btn-outline-dark:hover {
+  color:  #ef88e3;
+  background-color:#ef88e3;
+  border-color: #eda5e5;
+  font-size: medium;
+  color: var(--bs-btn-active-bg);
+}
+

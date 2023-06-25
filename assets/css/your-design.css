@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;  /* Full viewport height */
+}
+
+#header, #footer {
+    height: 50px;
+    background-color: #f0f0f0;
+    text-align: center;
+    line-height: 50px;
+}
+
+#canvas-container {
+    flex-grow: 1;  /* Take up remaining space */
+    position: relative;  /* Relative positioning */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

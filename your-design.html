@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Shopping Cart - Brand</title>
+    <title>Services - Brand</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.reflowhq.com/v2/toolkit.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
@@ -18,10 +18,13 @@
     <link rel="stylesheet" href="assets/css/Features-Cards-icons.css">
     <link rel="stylesheet" href="assets/css/Hero-Carousel-images.css">
     <link rel="stylesheet" href="assets/css/Lightbox-Gallery-baguetteBox.min.css">
-    <link rel="stylesheet" href="assets/css/wishlist.css">
+    <link rel="stylesheet" href="assets/shopping-cart.css">
+    <link rel="stylesheet" href="assets/shopping-cart2.css">
+    <link rel="stylesheet" href="assets/wishlist.css">
+    <!-- <link rel="stylesheet" href="assets/your-design.css"> -->
 </head>
 
-<body>
+<head>
     <nav class="navbar navbar-light navbar-expand-md sticky-top navbar-shrink py-3" id="mainNav">
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><img style="margin-right: 0px;padding-bottom: 0px;padding-left: 0px;padding-top: 0px;padding-right: 0px;margin-left: 0px;"></a>
             <div class="collapse navbar-collapse" id="navcol-1" style="margin-left: 43px;padding-left: 0px;">
@@ -31,7 +34,29 @@
                         <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
                     </li>
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="products.html" style="text-shadow: 1px 1px 4px var(--bs-secondary-bg-subtle);">Products</a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="bottles.html">Reusable Bottles</a><a class="dropdown-item" href="cups.html">Reusable Cups</a><a class="dropdown-item" href="accessories.html">Reusable Straws</a><a class="dropdown-item" href="straws.html" style="transition: none 0s ease 0s;">Reusable Straws</a></div>
+                        <div class="dropdown-menu">
+                            <a 
+                                class="dropdown-item" 
+                                href="bottles.html">Reusable Bottles
+                            </a>
+                            <a 
+                                class="dropdown-item" 
+                                href="cups.html">Reusable Cups
+                            </a>
+                            <a 
+                                class="dropdown-item" 
+                                href="straws.html">Reusable Straws
+                            </a>
+                            <a 
+                                class="dropdown-item" 
+                                href="accessories.html">Accessories
+                            </a>
+                            <a 
+                                class="dropdown-item" 
+                                href="your-design.html" 
+                                style="transition: none 0s ease 0s;">Create Your Own Design
+                            </a>
+                        </div>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="team.html" style="text-shadow: 1px 1px 4px var(--bs-secondary-bg-subtle);">Team</a></li>
                     <li class="nav-item"><a class="nav-link" href="contacts.html" style="text-shadow: 1px 1px 4px var(--bs-secondary-bg-subtle);">Contact Us</a></li>
@@ -48,116 +73,152 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-heart" style="font-size: 20px;padding-right: 0px;margin-right: 0px;padding-top: 3px;margin-left: -9px;color: var(--bs-body-bg);">
                         <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
                     </svg>
-                </a> 
-                <a href="shopping-cart.html" class="btn btn-primary button1" style="margin-left: 0px;margin-right: 10px;box-shadow: 1px 1px 6px var(--bs-gray-500);">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-cart3" style="font-size: 20px;padding-right: 0px;margin-right: 0px;padding-top: 3px;margin-left: -9px;color: var(--bs-body-bg);">
-                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
-                    </svg>
-                </a>
+                </a>  
+                <div>
+                    <a href="shopping-cart.html" class="btn btn-primary button1" style="margin-left: 0px;margin-right: 10px;box-shadow: 1px 1px 6px var(--bs-gray-500);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-cart3" style="font-size: 20px;padding-right: 0px;margin-right: 0px;padding-top: 3px;margin-left: -9px;color: var(--bs-body-bg);">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+                        </svg>
+                    </a>
+                </div>
                 <a class="btn btn-primary shadow" role="button" href="login.html" style="margin-left: 0px;"><a href="login.html">Log in</a></a>
             </div><button data-bs-target="#navcol-1" data-bs-toggle="collapse" class="navbar-toggler"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
         </div>
     </nav>
-    
-    <!-- start section -->
-    <header>
-        <h1 class="center">
-            Simple Wishlist Project
-        </h1>
-    </header>
-    <main>
-        <div id="content">
-            <div class="product">
-                <div id = "product0">
-                    <img src="images/apples.jpg" height="150" width="200" />
-                    <h3>Apples</h3>
-                    <p>Type: Fruit</p>
-                    <p>Price: Rs 80 / kg</p>
-                </div>
-                <input type="button" value="Add to List" id="0" class="but" />
-            </div>
-            <div class="product">
-                <div id = "product1">
-                    <img src="images/guava.jpg" height="150" width="200" />
-                    <h3>Guava</h3>
-                    <p>Type: Fruit</p>
-                    <p>Price: Rs 60 / kg</p>
-                </div>
-                <input type="button" value="Add to List" id="1" class="but" />
-            </div>
-            <div class="product">
-                <div id = "product2">
-                    <img src="images/grapes.jpg" height="150" width="200" />
-                    <h3>Grapes</h3>
-                    <p>Type: Fruit</p>
-                    <p>Price: Rs 100 / kg</p>
-                </div>
-                <input type="button" value="Add to List" id="2" class="but" />
-            </div>
-            <div class="product">
-                <div id = "product3">
-                    <img src="images/banana.jpg" height="150" width="200" />
-                    <h3>Bananas</h3>
-                    <p>Type: Fruit</p>
-                    <p>Price: Rs 70 / doz</p>
-                </div>
-                <input type="button" value="Add to List" id="3" class="but" />
-            </div>
-            <div class="product">
-                <div id = "product4">
-                    <img src="images/orange.jpg" height="150" width="200" />
-                    <h3>Oranges</h3>
-                    <p>Type: Fruit</p>
-                    <p>Price: Rs 90 / kg</p>
-                </div>
-                <input type="button" value="Add to List" id="4" class="but" />
-            </div>           
-            <div class="product">
-                <div id = "product5">
-                    <img src="images/water-melon.jpg" height="150" width="200" />
-                    <h3>Water Melon</h3>
-                    <p>Type: Fruit</p>
-                    <p>Price: Rs 30 / kg</p>
-                </div>
-                <input type="button" value="Add to List" id="5" class="but" />
-            </div>                        
-            <div class="product">
-                <div id = "product6">
-                    <img src="images/carrot.jpg" height="150" width="200" />
-                    <h3>Carrot</h3>
-                    <p>Type: Vegetable</p>
-                    <p>Price: Rs 30 / kg</p>
-                </div>
-                <input type="button" value="Add to List" id="6" class="but" />
-            </div>                        
-            <div class="product">
-                <div id = "product7">
-                    <img src="images/potato.jpg" height="150" width="200" />
-                    <h3>Potato</h3>
-                    <p>Type: Vegetable</p>
-                    <p>Price: Rs 20 / kg</p>
-                </div>
-                <input type="button" value="Add to List" id="7" class="but" />
-            </div>                        
-            <div class="product">
-                <div id = "product8">
-                    <img src="images/tomato.jpg" height="150" width="200" />
-                    <h3>Tomato</h3>
-                    <p>Type: Vegetable</p>
-                    <p>Price: Rs 50 / kg</p>
-                </div>
-                <input type="button" value="Add to List" id="8" class="but" />
-            </div>                                                            
-        </div>
-    </main>
+</head>
+    <script type="text/javascript">
+    var canvas, ctx, flag = false,
+        prevX = 0,
+        currX = 0,
+        prevY = 0,
+        currY = 0,
+        dot_flag = false;
 
-    <aside id = "wishlist">
-        <h2 class="center">My Wishlist</h2>
-    </aside>
+    var x = "black",
+        y = 2;
     
+    function init() {
+        canvas = document.getElementById('can');
+        ctx = canvas.getContext("2d");
+        w = canvas.width;
+        h = canvas.height;
     
-    <!-- start footer -->
-    <footer class="bg-primary-gradient">
+        canvas.addEventListener("mousemove", function (e) {
+            findxy('move', e)
+        }, false);
+        canvas.addEventListener("mousedown", function (e) {
+            findxy('down', e)
+        }, false);
+        canvas.addEventListener("mouseup", function (e) {
+            findxy('up', e)
+        }, false);
+        canvas.addEventListener("mouseout", function (e) {
+            findxy('out', e)
+        }, false);
+    }
+    
+    function color(obj) {
+        switch (obj.id) {
+            case "green":
+                x = "green";
+                break;
+            case "blue":
+                x = "blue";
+                break;
+            case "red":
+                x = "red";
+                break;
+            case "yellow":
+                x = "yellow";
+                break;
+            case "orange":
+                x = "orange";
+                break;
+            case "black":
+                x = "black";
+                break;
+            case "white":
+                x = "white";
+                break;
+        }
+        if (x == "white") y = 14;
+        else y = 2;
+    
+    }
+    
+    function draw() {
+        ctx.beginPath();
+        ctx.moveTo(prevX, prevY);
+        ctx.lineTo(currX, currY);
+        ctx.strokeStyle = x;
+        ctx.lineWidth = y;
+        ctx.stroke();
+        ctx.closePath();
+    }
+    
+    function erase() {
+        var m = confirm("Want to clear");
+        if (m) {
+            ctx.clearRect(0, 0, w, h);
+            document.getElementById("canvasimg").style.display = "none";
+        }
+    }
+    
+    function save() {
+        document.getElementById("canvasimg").style.border = "2px solid";
+        var dataURL = canvas.toDataURL();
+        document.getElementById("canvasimg").src = dataURL;
+        document.getElementById("canvasimg").style.display = "inline";
+    }
+    
+    function findxy(res, e) {
+        if (res == 'down') {
+            prevX = currX;
+            prevY = currY;
+            currX = e.clientX - canvas.offsetLeft;
+            currY = e.clientY - canvas.offsetTop;
+    
+            flag = true;
+            dot_flag = true;
+            if (dot_flag) {
+                ctx.beginPath();
+                ctx.fillStyle = x;
+                ctx.fillRect(currX, currY, 2, 2);
+                ctx.closePath();
+                dot_flag = false;
+            }
+        }
+        if (res == 'up' || res == "out") {
+            flag = false;
+        }
+        if (res == 'move') {
+            if (flag) {
+                prevX = currX;
+                prevY = currY;
+                currX = e.clientX - canvas.offsetLeft;
+                currY = e.clientY - canvas.offsetTop;
+                draw();
+            }
+        }
+    }
+    </script>
+    <body onload="init()">
+        <canvas id="can" width="400" height="400" style="position:absolute;top:10%;left:10%;border:2px solid;"></canvas>
+        <div style="position:absolute;top:12%;left:43%;">Choose Color</div>
+        <div style="position:absolute;top:15%;left:45%;width:10px;height:10px;background:green;" id="green" onclick="color(this)"></div>
+        <div style="position:absolute;top:15%;left:46%;width:10px;height:10px;background:blue;" id="blue" onclick="color(this)"></div>
+        <div style="position:absolute;top:15%;left:47%;width:10px;height:10px;background:red;" id="red" onclick="color(this)"></div>
+        <div style="position:absolute;top:17%;left:45%;width:10px;height:10px;background:yellow;" id="yellow" onclick="color(this)"></div>
+        <div style="position:absolute;top:17%;left:46%;width:10px;height:10px;background:orange;" id="orange" onclick="color(this)"></div>
+        <div style="position:absolute;top:17%;left:47%;width:10px;height:10px;background:black;" id="black" onclick="color(this)"></div>
+        <div style="position:absolute;top:20%;left:43%;">Eraser</div>
+        <div style="position:absolute;top:22%;left:45%;width:15px;height:15px;background:white;border:2px solid;" id="white" onclick="color(this)"></div>
+        <img id="canvasimg" style="position:absolute;top:10%;left:52%;" style="display:none;">
+        <input type="button" value="save" id="btn" size="30" onclick="save()" style="position:absolute;top:55%;left:10%;">
+        <input type="button" value="clear" id="clr" size="23" onclick="erase()" style="position:absolute;top:55%;left:15%;">
+
+
+   <footer class="bg-primary-gradient">
         <div class="container py-4 py-lg-5">
             <div class="row justify-content-center">
                 <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column">
@@ -207,12 +268,15 @@
             </div>
         </div>
     </footer>
+
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdn.reflowhq.com/v2/toolkit.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/bold-and-bright.js"></script>
     <script src="assets/js/Lightbox-Gallery-baguetteBox.min.js"></script>
     <script src="assets/js/Lightbox-Gallery.js"></script>
+    <!-- <script src="your-design.js"></script> -->
+
 </body>
 
 </html>

@@ -1,0 +1,32 @@
+.img {
+    border: 10px solid #fff;
+    float: left;
+    height: 450px;
+    width: 300px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px #111;
+    -webkit-box-shadow: 5px 5px 5px #111;
+    }
+
+img:hover {
+transform:scale(1.5);
+}
+
+/* .focus img {
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-o-transition: all 1s ease;
+-ms-transition: all 1s ease;
+transition: all 1s ease; 
+}
+
+.focus img:hover {
+border: 70px solid #000;
+border-radius:50%;
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-o-transition: all 1s ease;
+-ms-transition: all 1s ease;
+transition: all 1s ease; 
+} */
