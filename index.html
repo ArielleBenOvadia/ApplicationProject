@@ -21,12 +21,15 @@
     <link rel="stylesheet" href="assets/shopping-cart.css">
     <link rel="stylesheet" href="assets/shopping-cart2.css">
     <link rel="stylesheet" href="assets/wishlist.css">
+    <link rel="stylesheet" href="assets/css/image.css">
 </head>
 
 <body>
     <nav class="navbar navbar-light navbar-expand-md sticky-top navbar-shrink py-3" id="mainNav">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><img style="margin-right: 0px;padding-bottom: 0px;padding-left: 0px;padding-top: 0px;padding-right: 0px;margin-left: 0px;"></a>
-            <div class="collapse navbar-collapse" id="navcol-1" style="margin-left: 43px;padding-left: 0px;">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img class="logo-nav" src="assets\img\brands\logo.png">
+            </a>
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html" style="text-shadow: 1px 1px 4px var(--bs-secondary-bg-subtle);">Home</a></li>
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="about.html" style="text-shadow: 1px 1px 4px var(--bs-secondary-bg-subtle);">About</a>
@@ -80,7 +83,26 @@
                         </svg>
                     </a>
                 </div>
-                <a class="btn btn-primary shadow" role="button" href="login.html" style="margin-left: 0px;"><a href="login.html">Log in</a></a>
+                <!-- <a class="btn btn-primary shadow" role="button" href="login.html" style="margin-left: 0px;"><a href="login.html">Log in</a></a> -->
+                <div data-reflow-type="auth-button">
+                    <div class="reflow-auth-button">
+                        <div class="ref-auth-button-guest" style="display: none;">
+                            <div class="ref-button ref-sign-in">Sign In</div>
+                            <div class="ref-register">
+                                Don't have an account?
+                                <span class="text-primary">
+                                    Register
+                                <span></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="ref-auth-button-signed" style="display: block;">
+                        <a class="ref-profile-info">
+                            <span class="ref-profile-name">Batya</span>
+                        </a>
+                        <div class="ref-button ref-sign-out">Sign Out</div>
+                    </div>
+                </div>
             </div><button data-bs-target="#navcol-1" data-bs-toggle="collapse" class="navbar-toggler"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
         </div>
     </nav>
