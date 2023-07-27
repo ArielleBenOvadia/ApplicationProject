@@ -33,9 +33,10 @@
             <div class="collapse navbar-collapse" id="navcol-1" style="margin-left: 43px;padding-left: 0px;">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html" style="text-shadow: 1px 1px 4px var(--bs-secondary-bg-subtle);">Home</a></li>
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="about.html" style="text-shadow: 1px 1px 4px var(--bs-secondary-bg-subtle);">About</a>
+                    <li class="nav-item"><a class="nav-link" href="about.html" style="text-shadow: 1px 1px 4px var(--bs-secondary-bg-subtle);">About</a></li>
+                    <!-- <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="about.html" style="text-shadow: 1px 1px 4px var(--bs-secondary-bg-subtle);">About</a>
                         <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
-                    </li>
+                    </li> -->
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="products.html" style="text-shadow: 1px 1px 4px var(--bs-secondary-bg-subtle);">Products</a>
                         <div class="dropdown-menu">
                             <a 
@@ -116,7 +117,7 @@
                         </svg>
                     </a>
                 </div>
-                <!-- <a class="btn btn-primary shadow" role="button" href="login.html" style="margin-left: 0px;"><a href="login.html">Log in</a></a> -->
+              
                 <div data-reflow-type="auth-button">
                     <div class="reflow-auth-button">
                         <div class="ref-auth-button-guest" style="display: none;">
@@ -142,43 +143,88 @@
             </div><button data-bs-target="#navcol-1" data-bs-toggle="collapse" class="navbar-toggler"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
         </div>
     </nav>
+
     <section class="py-5">
         <div class="container py-5">
             <div class="row mb-4 mb-lg-5">
                 <div class="col-md-8 col-xl-6 text-center mx-auto">
-                    <p class="fw-bold text-success mb-2">Our Services</p>
-                    <h3 class="fw-bold">What we can do for you</h3>
+                    <h3 class="fw-bold">More About Us</h3>
                 </div>
             </div>
             <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
-                <div class="col mb-5"><img class="rounded img-fluid shadow" src="assets/img/products/1.jpg"></div>
+                <div class="col mb-5"><img class="rounded img-fluid shadow" src="assets/img/brands/logo.png"></div>
                 <div class="col d-md-flex align-items-md-end align-items-lg-center mb-5">
                     <div>
-                        <h5 class="fw-bold">Our Projects</h5>
-                        <p class="text-muted mb-4">Erat netus est hendrerit, nullam et quis ad cras porttitor iaculis. Bibendum vulputate cras aenean.</p><button class="btn btn-primary shadow" type="button">Learn more</button>
+                        <h5 class="fw-bold">Our Cause</h5>
+                        <p class="text-muted mb-4"> Welcom to Arielle's Horizon!                      
+                            <span id="causeDetails" class="hidden">
+                                Arielle's Horizon is a non-profit organization dedicated to the preservation and conservation of oceans and sea turtles.
+                                Founded in 2023, our organization is driven by a passionate group of individuals,
+                                committed to creating a sustainable future for these majestic marine creatures and the fragile ecosystems they inhabit.
+                                Our mission is twofold: 
+                                to raise awareness about the critical importance of ocean conservation and to actively work towards protecting sea turtles, whose populations are rapidly declining.
+                                We believe that by safeguarding sea turtles and their habitats, we can also contribute to the overall health and well-being of our oceans.
+                                At Arielle's Horizon, we strive to educate individuals of all ages about the various environmental challenges our oceans face.
+                                We organize workshops, seminars, and awareness campaigns, aiming to inspire a sense of responsibility and promote environmentally conscious behaviors.
+                                Through these initiatives, we hope to foster a deep appreciation for the vital role oceans play in sustaining life on Earth.
+                                Our organization actively engages in fieldwork and conservation efforts to protect sea turtles.
+                                We collaborate with local communities, researchers, and conservationists to implement initiatives that ensure the survival and thriving of these endangered creatures.
+                                This includes monitoring nesting sites, conducting research on sea turtle behavior and migration patterns, rescuing and rehabilitating injured turtles,
+                                and advocating for stronger legal protections.
+                                Arielle's Horizon also plays a crucial role in policy advocacy and lobbying for stricter regulations to combat pollution, overfishing, and habitat destruction.
+                                We actively partner with, non-profit organizations and other stakeholders to enact meaningful change at a broader level.
+                                In addition to our conservation work, we have a unique approach to fundraising. All the income generated from the products we sell goes directly to our non-profit organization to support our initiatives to save and clean the oceans.
+                                By purchasing our merchandise, you not only receive high-quality products but also contribute directly to our conservation efforts.
+                                We rely on the generous support of individuals, businesses, and grants to fund our programs and initiatives.
+                                Through donations, sponsorships, and volunteer contributions, we can expand our reach and make a tangible impact on ocean conservation and the survival of sea turtles.
+                                By joining Arielle's Horizon, you become part of a dedicated community united in the common goal of safeguarding our oceans and protecting the future of sea turtles. Together, we can create a brighter horizon for these magnificent creatures, ensuring their continued existence for generations to come.
+                            </span>
+                        </p>
+                        <button class="btn btn-primary shadow" type="button" id="learnMoreBtn" onclick="toggleCauseDetails()">Learn more</button>
                     </div>
                 </div>
             </div>
             <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
-                <div class="col order-md-last mb-5"><img class="rounded img-fluid shadow" src="assets/img/products/2.jpg"></div>
+                <div class="col order-md-last mb-5"><img class="rounded img-fluid shadow" src="assets/img/about/cleaning.jpg"></div>
                 <div class="col d-md-flex align-items-md-end align-items-lg-center mb-5">
                     <div>
-                        <h5 class="fw-bold">Pictures of cleaning</h5>
-                        <p class="text-muted mb-4">Erat netus est hendrerit, nullam et quis ad cras porttitor iaculis. Bibendum vulputate cras aenean.</p><button class="btn btn-primary shadow" type="button">Learn more</button>
+                        <h5 class="fw-bold">Cleaning & Chilling</h5>
+                        <p class="text-muted mb-4"> One a sunny day, my group and I took action to clean the ocean. Armed with gloves and trash bags, we combed the beach,                       
+                            <span id="cleaningDetails" class="hidden">
+                                One a sunny day, my group and I took action to clean the ocean. Armed with gloves and trash bags, we combed the beach, picking up litter to protect marine life.
+                                We also ventured into the water to remove harmful fishing gear. Other beachgoers joined, making it a collective effort.
+                                Despite being a one-day cleanup, we felt a sense of pride and camaraderie, knowing we contributed to a cleaner ocean.
+                                Since then, we've continued our commitment to ocean conservation, spreading awareness, and advocating for a sustainable future.
+                                Together, we can make a difference for our oceans.
+                            </span>
+                        </p>                      
+                        <button class="btn btn-primary shadow" type="button" id="learnMoreCleaningBtn" onclick="toggleCleaningDetails()">Learn more</button>
                     </div>
                 </div>
             </div>
+            
             <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
-                <div class="col mb-5"><img class="rounded img-fluid shadow" src="assets/img/products/3.jpg"></div>
-                <div class="col d-md-flex align-items-md-end align-items-lg-center mb-5">
-                    <div>
-                        <h5 class="fw-bold">volunteer</h5>
-                        <p class="text-muted mb-4">Erat netus est hendrerit, nullam et quis ad cras porttitor iaculis. Bibendum vulputate cras aenean.</p><button class="btn btn-primary shadow" type="button">Learn more</button>
-                    </div>
+                <div class="col mb-5">
+                  <div class="d-flex justify-content-center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27029.3340767456!2d34.7930624!3d32.132300799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1siw!2sil!4v1690484538756!5m2!1siw!2sil" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+                <div class="col mb-5">
+                  <div class="d-flex flex-column justify-content-center align-items-center align-items-md-start">
+                    <h5 class="fw-bold">Our Cleaning Map</h5>
+                    <p>Come and clean the beaches with us, these are all the places we've cleand!</p>
+                  </div>
                 </div>
             </div>
-        </div>
+        </div>     
+              
     </section>
+
+    <script src="assets/bootstrap/js/infoBotton.js"></script>
+
+
+
+
     <footer class="bg-primary-gradient">
         <div class="container py-4 py-lg-5">
             <div class="row justify-content-center">

@@ -42,3 +42,11 @@
   color: var(--bs-btn-active-bg);
 }
 
+/* Custom CSS to hide and show the additional content */
+.hidden {
+  display: none;
+}
+
+.shown {
+  display: block;
+}
