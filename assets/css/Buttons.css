@@ -1,4 +1,5 @@
 .btn-primary {
+  background-color: none;
   --bs-btn-color: #000000;
   --bs-btn-bg: #7beddf;
   --bs-btn-border-color: #7beddf;

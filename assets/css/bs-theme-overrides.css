@@ -36,4 +36,30 @@
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #7beddf;
 }
+/* For small devices, set the padding to 5px */
+@media (max-width: 576px) {
+  .navbar .nav-item .nav-link .navbar-toggler {
+    padding: 0 5px;
+  }
+}
 
+/* For medium devices, set the padding to 10px */
+@media (min-width: 576px) {
+  .navbar .nav-item .nav-link .navbar-toggler {
+    padding: 0 10px;
+  }
+}
+
+/* For large devices, set the padding to 15px */
+@media (min-width: 768px) {
+  .navbar .nav-item .nav-link .navbar-toggler {
+    padding: 0 15px;
+  }
+}
+
+/* For extra large devices, set the padding to 20px */
+@media (min-width: 992px) {
+  .navbar .nav-item .nav-link .navbar-toggler {
+    padding: 0 20px;
+  }
+}
