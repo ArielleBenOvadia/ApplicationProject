@@ -50,3 +50,7 @@
 .shown {
   display: block;
 }
+
+.custom-btn-size {
+  padding: 2px 6px; /* Adjust the padding as desired */
+}
