@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    let images = ['azurebaracelet.jpg', 'black(2).png', 'black.png', 'blackbracelet.jpg', 'blue (2).png', 'blue.png',
+    let images = ['azurebaracelet.jpg', 'black (2).png', 'black.png', 'blackbracelet.jpg', 'blue (2).png', 'blue.png',
      'bluebracelet.jpg', 'gold.png', 'green.png', 'greybracelet.jpg', 'mermaid.png', 'Picture22.png',
     'Picture44.png', 'Picture48.png', 'pink (2).png', 'pink.png', 'pinkbracelet.jpg', 'purple.png',
     'rose gold.png', 'skystonebracelet.jpg', 'whitebracelet.jpg', 'yellow.png']; // Add all your image names here.
