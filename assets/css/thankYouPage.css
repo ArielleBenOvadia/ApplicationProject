@@ -1,0 +1,28 @@
+/* Reset default margin on heading elements */
+h1,
+h2 {
+  margin: 0;
+}
+
+/* Vertically center the content in the middle of the screen */
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+/* Optional styling for the content */
+section h1 {
+  font-size: 60px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+section h2 {
+  font-size: 30px;
+  line-height: 1.6;
+  text-align: center;
+  margin-top: 100px;
+}
