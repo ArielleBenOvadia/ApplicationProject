@@ -40,20 +40,25 @@
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="products.html" style="text-shadow: 1px 1px 4px var(--bs-secondary-bg-subtle);">Products</a>
                         <div class="dropdown-menu">
                             <a 
-                                class="dropdown-item" 
-                                href="bottles.html">Reusable Bottles
+                                class="dropdown-item" href="#"
+                                onclick="CategoryPage('bottles')">Reusable Bottles
                             </a>
                             <a 
                                 class="dropdown-item" 
-                                href="cups.html">Reusable Cups
+                                href="#" onclick="CategoryPage('cups')"
+                                >Reusable Cups
                             </a>
                             <a 
                                 class="dropdown-item" 
-                                href="straws.html">Reusable Straws
+                                href="#"
+                                onclick="CategoryPage('straws')"
+                                >Reusable Straws
                             </a>
                             <a 
                                 class="dropdown-item" 
-                                href="accessories.html">Accessories
+                                href="#"
+                                onclick="CategoryPage('acessories')"
+                                >Accessories
                             </a>
                             <a 
                                 class="dropdown-item" 
@@ -117,8 +122,8 @@
                     <!-- Product section-->
         <section class="py-5">
             <div class="container px-4 px-lg-5 my-5">
-                <div class="row gx-4 gx-lg-5 align-items-center">
-                    <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="..." /></div>
+                <div class="top-item row gx-4 gx-lg-5 align-items-center">
+                    <!-- <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="..." /></div>
                     <div class="col-md-6">
                         <div class="small mb-1">SKU: BST-498</div>
                         <h1 class="display-5 fw-bolder">Shop item template</h1>
@@ -134,7 +139,7 @@
                                 Add to cart
                             </button>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -304,6 +309,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdn.reflowhq.com/v2/toolkit.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
@@ -313,6 +319,8 @@
     <script src="assets/js/shopping-cart.js"></script>
     <script src="assets/js/shopping-cart2.js"></script>
     <script src="assets/js/wishlist.js"></script>
+    <script src="./product.js"></script>
+    <script src="./about.js"></script>
 </body>
 
 </html>

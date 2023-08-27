@@ -9,6 +9,12 @@ const getProductById = async (id) => {
   return await Product.findById(id);
 };
 
+const getProductByCategory = async (category) => {
+  let newCategory = await Product.find();
+  newCategory = newCategory.filter(c=>c.category.includes(category))
+  return newCategory;
+};
+
 const getAll = async () => {
   try {
     const products = await Product.find();
@@ -39,6 +45,7 @@ const deleteProduct = async (id) => {
 module.exports = {
     getProductByName,
     getProductById,
+    getProductByCategory,
     getAll,
     updateProduct,
     deleteProduct,

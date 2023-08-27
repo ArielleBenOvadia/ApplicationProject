@@ -6,6 +6,10 @@ GET http://localhost:3000/product/64eb6b098dfe25b916cbf73e
 
 ###
 
+GET http://localhost:3000/product/category/NotHuman
+
+###
+
 PATCH http://localhost:3000/product/update
 Content-Type: application/json
 
@@ -34,9 +38,9 @@ POST http://localhost:3000/product/create
 Content-Type: application/json
 
 {
-    "name":"yoram",
+    "name":"da",
     "description":"ttth",
-    "price":"123456",
-    "category":"Human",
-    "image":"https://www.hillula.co.il//media/catalog/category/strow-600x600.jpg"
+    "price":"1111",
+    "category":"NotHuman",
+    "image":""
 }
