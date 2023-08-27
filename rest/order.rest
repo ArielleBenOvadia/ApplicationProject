@@ -1,0 +1,37 @@
+POST http://localhost:3000/order/create
+Content-Type: application/json
+
+{
+    "order":{
+        "user": "64eb5801c543cb6186f754bd",
+        "products": ["64eb6b098dfe25b916cbf73e"],
+        "orderNumber": 1
+    }
+}
+
+###
+
+GET http://localhost:3000/order
+
+
+###
+
+DELETE http://localhost:3000/order/delete
+Content-Type: application/json
+
+{
+    "id":"64eb7285c09e5a18886e02b4"
+}
+
+###
+
+PATCH http://localhost:3000/order/update
+Content-Type: application/json
+
+{
+    "id":"64eb78394f493563ec0b6962",
+    "order":{
+        "user": "64eb5801c543cb6186f754bd",
+        "products": ["64eb6b098dfe25b916cbf73e","64eb6b098dfe25b916cbf73e"]
+    }
+}

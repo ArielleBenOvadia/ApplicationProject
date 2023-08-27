@@ -1,0 +1,42 @@
+GET http://localhost:3000/product
+
+###
+
+GET http://localhost:3000/product/64eb6b098dfe25b916cbf73e
+
+###
+
+PATCH http://localhost:3000/product/update
+Content-Type: application/json
+
+{
+    "id":"64eb6b098dfe25b916cbf73e",
+    "product":{
+        "price":"5678",
+        "image":"https://www.meitavit.com/meitavit.com/originals/1559821408_web_pic_professional_kitchen_500_500_px_WHITE_0400.jpg"
+    }
+}
+
+
+
+###
+
+DELETE http://localhost:3000/product/delete
+Content-Type: application/json
+
+{
+    "id":"64eb6b098dfe25b916cbf73e"
+}
+
+###
+
+POST http://localhost:3000/product/create
+Content-Type: application/json
+
+{
+    "name":"yoram",
+    "description":"ttth",
+    "price":"123456",
+    "category":"Human",
+    "image":"https://www.hillula.co.il//media/catalog/category/strow-600x600.jpg"
+}

@@ -1,0 +1,35 @@
+GET http://localhost:3000/user
+
+###
+GET http://localhost:3000/user/64eb5333cf79d3bed4053bba
+
+###
+
+PATCH http://localhost:3000/user/update
+Content-Type: application/json
+
+{
+    "id":"64eb5333cf79d3bed4053bba",
+    "user":{
+        "password":"5678"
+    }
+}
+
+###
+
+DELETE http://localhost:3000/user/delete
+Content-Type: application/json
+
+{
+    "id":"64eb5333cf79d3bed4053bba"
+}
+
+###
+
+POST http://localhost:3000/user/create
+Content-Type: application/json
+
+{
+    "email":"ofek@idan",
+    "password":"1234"
+}
