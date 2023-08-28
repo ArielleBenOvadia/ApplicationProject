@@ -12,3 +12,13 @@ function CategoryPage(name) {
     },
   });
 }
+
+"use strict";
+let map,searchManager;
+
+function getMap(){
+  map = new Microsoft.Maps.Map("#map", {
+    credentials:'AnSwNOD-rjLdT-e7jJq1Y7mzbGpX7H4lS2dcU1V7CMPUx6BmmPh8g-No4K9dJNN5',
+  })
+}
+
