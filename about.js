@@ -13,12 +13,30 @@ function CategoryPage(name) {
   });
 }
 
-"use strict";
-let map,searchManager;
+function initMap() {
+  var map = new Microsoft.Maps.Map(document.getElementById("map"), {
+    center: new Microsoft.Maps.Location(31.771955, 34.683598), // Set the initial center of the map to Israel 31.774061, 34.683261
+    zoom: 14, // Set the initial zoom level
+  });
 
-function getMap(){
-  map = new Microsoft.Maps.Map("#map", {
-    credentials:'AnSwNOD-rjLdT-e7jJq1Y7mzbGpX7H4lS2dcU1V7CMPUx6BmmPh8g-No4K9dJNN5',
-  })
+  //Load points from the database
+  $.ajax({
+    url: "http://localhost:3000/point",
+    method: "GET",
+    success: function (data) {
+      data.forEach(function (point) {
+        addMarker(map, point.latitude, point.longitude);
+      });
+    },
+    error: function (error) {
+      console.error("An error occurred while loading points:", error);
+    },
+  });
 }
 
+function addMarker(map, lat, lng) {
+  var location = new Microsoft.Maps.Location(lat, lng);
+
+  var pushpin = new Microsoft.Maps.Pushpin(location, null);
+  map.entities.push(pushpin);
+}

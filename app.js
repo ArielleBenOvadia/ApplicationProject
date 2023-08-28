@@ -10,6 +10,7 @@ app.use(express.json())
 app.use("/user",require("./routes/userRoute"))
 app.use("/product",require("./routes/productRoute"))
 app.use("/order",require("./routes/orderRoute"))
+app.use("/point", require("./routes/pointRoute"))
 
 const mongoConnect = () => 
 {
