@@ -1,8 +1,13 @@
+const { error } = require("console");
 const User = require("../models/userSchema");
 
-const getUserByEmail = async (email) => {
+const getUserByData = async (data) => {
+  const email = data.email
+  const myPassword = data.password
   const user = await User.findOne({ email: email });
-  return user;
+  if(myPassword === user.password)
+      return user;
+    // Handle Error
 };
 
 const getUserById = async (id) => {
@@ -37,7 +42,7 @@ const deleteUser = async (id) => {
 };
 
 module.exports = {
-  getUserByEmail,
+  getUserByData,
   getUserById,
   updateUser,
   getAll,

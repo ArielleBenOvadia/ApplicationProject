@@ -11,10 +11,10 @@ const getUserById = async (req, res, next) => {
   }
 };
 
-const getUserByEmail = async (req, res, next) => {
+const getUserByData = async (req, res, next) => {
   try {
-    const { email } = req.params;
-    const user = await userService.getUserByEmail(email);
+    const { data } = req.params;
+    const user = await userService.getUserByData(data);
     if (user) {
       res.status(200).send(user);
     } else {
@@ -74,7 +74,7 @@ const createUser = async (req, res, next) => {
 module.exports = {
   updateUser,
   getUserById,
-  getUserByEmail,
+  getUserByData,
   getAllUsers,
   deleteUser,
   createUser,

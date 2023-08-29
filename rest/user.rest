@@ -33,3 +33,18 @@ Content-Type: application/json
     "email":"ofek@idan",
     "password":"1234"
 }
+
+###
+
+GET http://localhost:3000/user/data
+Content-Type: application/json
+
+{
+    "data":{
+    "email":"ofek@ofek",
+    "password":"1234"
+    }
+    
+}
+
+###
