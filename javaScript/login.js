@@ -17,7 +17,7 @@ function loginForm() {
         data: data,
         success: function (response) {   
           if (response == "OK") {           
-            window.location.href = "HomePage.html";
+            window.location.href = "index.html";
             return;
           } else {
             alert("Invalid email or password");
