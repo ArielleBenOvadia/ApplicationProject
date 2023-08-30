@@ -26,9 +26,6 @@
 
 <body>
     <nav class="navbar navbar-light navbar-expand-md sticky-top navbar-shrink py-3" id="mainNav">
-        <div id="UsersOnline" class="UsersOnline">
-            <span id="UsersCount">There is 0 Users online</span>
-          </div>
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <img class="logo-nav" src="assets\img\brands\logo.png">  
@@ -37,7 +34,9 @@
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html" style="text-shadow: 1px 1px 4px var(--bs-secondary-bg-subtle);">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html" style="text-shadow: 1px 1px 4px var(--bs-secondary-bg-subtle);">About</a></li>
-
+                    <!-- <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="about.html" style="text-shadow: 1px 1px 4px var(--bs-secondary-bg-subtle);">About</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                    </li> -->
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="products.html" style="text-shadow: 1px 1px 4px var(--bs-secondary-bg-subtle);">Products</a>
                         <div class="dropdown-menu">
                             <a 
@@ -71,9 +70,19 @@
                     <li class="nav-item"><a class="nav-link" href="team.html" style="text-shadow: 1px 1px 4px var(--bs-secondary-bg-subtle);">Team</a></li>
                     <li class="nav-item"><a class="nav-link" href="contacts.html" style="text-shadow: 1px 1px 4px var(--bs-secondary-bg-subtle);">Contact Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="signup.html" style="margin-right: 10px;text-shadow: 1px 1px 4px var(--bs-secondary-bg-subtle);">Sign up</a></li>
-
+                    <li class="nav-item dropdown drop1" style="background: transparent;padding-right: 0px;margin-right: -55px;"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" data-bss-hover-animate="pulse" href="#" style="background: transparent;padding: 7px 14px;border-color: var(--bs-primary);color: transparent;line-height: 27.6px;padding-left: 9px;padding-right: 3px;margin-right: 10px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-search" style="font-size: 20px;margin-left: -1px;padding-right: 0px;color: var(--bs-primary);margin-right: -9px;padding-top: 2px;margin-bottom: -2px;margin-top: -3px;">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                            </svg></a>
+                        <div class="dropdown-menu">
+                            <div data-reflow-type="product-search"></div>
+                        </div>
+                    </li>
                 </ul>
-
+                <a href="wish-list.html" class="btn btn-primary button1" style="margin-left: 0px;margin-right: 10px;box-shadow: 1px 1px 6px var(--bs-gray-500);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-heart" style="font-size: 20px;padding-right: 0px;margin-right: 0px;padding-top: 3px;margin-left: -9px;color: var(--bs-body-bg);">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
+                    </svg>
+                </a>  
                 <div>
                     <a href="shopping-cart.html" class="btn btn-primary button1" style="margin-left: 0px;margin-right: 10px;box-shadow: 1px 1px 6px var(--bs-gray-500);">
                         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-cart3" style="font-size: 20px;padding-right: 0px;margin-right: 0px;padding-top: 3px;margin-left: -9px;color: var(--bs-body-bg);">
@@ -81,41 +90,27 @@
                         </svg>
                     </a>
                 </div>
-
+                <!-- <a class="btn btn-primary shadow" role="button" href="login.html" style="margin-left: 0px;"><a href="login.html">Log in</a></a> -->
                 <div data-reflow-type="auth-button">
                     <div class="reflow-auth-button">
-                        <div class="ref-auth-button-guest" style="display: block;">
-                            <a href="login.html" class="ref-button ref-sign-in">Sign In</a> 
+                        <div class="ref-auth-button-guest" style="display: none;">
+                            <div class="ref-button ref-sign-in">Sign In</div>
+                            <div class="ref-register">
+                                Don't have an account?
+                                <span class="text-primary">
+                                    Register
+                                <span></span>
+                            </span>
                         </div>
                     </div>
+                    <div class="ref-auth-button-signed" style="display: block;">
+                        
+                        <div class="ref-button ref-sign-out">Sign Out</div>
+                    </div>
                 </div>
-                
             </div><button data-bs-target="#navcol-1" data-bs-toggle="collapse" class="navbar-toggler"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
         </div>
     </nav>
-            </div><button data-bs-target="#navcol-1" data-bs-toggle="collapse" class="navbar-toggler"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-        </div>
-    </nav>
-
-    <div class="container my-4">
-        <div class="row">
-          <div class="col-md-12">
-            <form id="searchForm">
-              <div class="input-group">
-                <input type="text" class="form-control" id="searchInput" placeholder="Search for products..." style="margin-right: 10px;">
-                <div class="input-group-append">
-                  <button class="btn btn-primary button1" type="submit" style="margin-left: 0px; margin-right: 10px; box-shadow: 1px 1px 6px var(--bs-gray-500);">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="#ffffff" viewBox="0 0 16 16" class="bi bi-search" style="font-size: 20px; padding-right: 0px; margin-right: 0px; padding-top: 3px; margin-left: -9px;">
-                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      
             </div><button data-bs-target="#navcol-1" data-bs-toggle="collapse" class="navbar-toggler"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
         </div>
     </nav>
@@ -388,7 +383,6 @@
         <script src="assets/js/shopping-cart.js"></script>
         <script src="assets/js/shopping-cart2.js"></script>
         <script src="assets/js/wishlist.js"></script>
-        <script src="about.js"></script>
     </body>
     
 </html>
