@@ -13,6 +13,39 @@ function CategoryPage(name) {
   });
 }
 
+$(document).ready(function () {
+  $("#searchForm").submit(function (event) {
+    event.preventDefault();
+    const name = $("#searchInput").val();
+    if (["bottles", "cup", "cups", "straws","straw"].includes(name)) {
+    $.ajax({
+      url: "http://localhost:3000/product/category/" + name,
+      method: "GET",
+      success: function (response) {
+        window.location.href = "bottles.html?category=" + name;
+      },
+      error: function (xhr) {
+        console.log(xhr.responseText);
+        // Handle the error
+      },
+    });}
+
+ $.ajax({
+        url: "http://localhost:3000/product/name/" + name,
+        method: "GET",
+        success: function (response) {     
+          var myId = response._id;
+          window.location.href = "product.html?product=" + myId;
+          console.log(response);
+        },
+        error: function (xhr) {
+          console.log(xhr.responseText);
+          // Handle the error
+        },
+      });
+  });
+});
+
 function initMap() {
   var map = new Microsoft.Maps.Map(document.getElementById("map"), {
     center: new Microsoft.Maps.Location(31.771955, 34.683598), // Set the initial center of the map to Israel 31.774061, 34.683261
@@ -49,3 +82,5 @@ socket.emit('login', { userId: 'YourUserID' });
 socket.on('usercnt', (msg) => {
   document.getElementById('UsersCount').innerHTML = "There are " + msg + " Users online";
 });
+
+
