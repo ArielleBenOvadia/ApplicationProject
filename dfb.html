@@ -116,33 +116,63 @@
         </div>
       </div>
       
-        <!-- ************************************************ -->
     <section class="py-5">
-        <div class="container py-5">
-            <div class="row mb-4 mb-lg-5">
-                <div class="col-md-8 col-xl-6 text-center mx-auto">
-                    <p class="fw-bold text-success mb-2">Sign up</p>
-                    <h2 class="fw-bold">Welcome</h2>
+        <div 
+            class="container py-5">
+                    <!-- Product section-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="top-item row gx-4 gx-lg-5 align-items-center">
+                    <!-- <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="..." /></div>
+                    <div class="col-md-6">
+                        <div class="small mb-1">SKU: BST-498</div>
+                        <h1 class="display-5 fw-bolder">Shop item template</h1>
+                        <div class="fs-5 mb-5">
+                            <span class="text-decoration-line-through">$45.00</span>
+                            <span>$40.00</span>
+                        </div>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at dolorem quidem modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?</p>
+                        <div class="d-flex">
+                            <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
+                            <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                                <i class="bi-cart-fill me-1"></i>
+                                Add to cart
+                            </button>
+                        </div>
+                    </div> -->
                 </div>
             </div>
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-6 col-xl-4">
-                    <div class="card">
-                        <div class="card-body text-center d-flex flex-column align-items-center">
-                            <div class="bs-icon-xl bs-icon-circle bs-icon-primary shadow bs-icon my-4"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-person">
-                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"></path>
-                                </svg></div>
-                            <form id="modalSignUp" method="post">
-                                <div class="mb-3"><input id="emailSignUp" class="form-control" type="email" name="email" placeholder="Email"></div>
-                                <div class="mb-3"><input id="passwordSignUp" class="form-control" type="password" name="password" placeholder="Password"></div>
-                                <div class="mb-3"><button id="submitBtn" class="btn btn-primary shadow d-block w-100" type="submit">Sign up</button></div> 
-                            </form>
-                                <p class="text-muted">Already have an account?&nbsp;<a href="login.html">Log in</a></p>
-                            </form>
-                        </div>
+            <button
+            onclick="addToCart('${product._id}')"
+              class="btn btn-success border rounded-pill"
+              data-bss-hover-animate="pulse"
+              type="button"
+              style="
+                margin-right: 0.2rem;
+                margin-top: 0.2rem;
+                margin-bottom: 0.2rem;
+                margin-left: 0.2rem;
+              "
+            >
+              Add To Cart
+            </button>
+            </div>
+        </section>
+        <!-- Related items section-->
+        <section class="py-5 bg-light">
+            <div class="container px-4 px-lg-5 mt-5">
+                <h2 class="fw-bolder mb-4">Related products</h2>
+                <div class="row gx-2 gy-2 row-cols-1 row-cols-md-2 row-cols-xl-3" data-bss-baguettebox="">
+                    <!-- Dynamic content will go here -->
+                    <div class="mid-container">
+                        <!-- Products will be appended here by jQuery -->
                     </div>
                 </div>
             </div>
+        </section>
+    </section>
+            </div>
+        </section>
         </div>
     </section>
     <footer class="bg-primary-gradient">
@@ -176,7 +206,7 @@
 
                 <div class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last">
                     <div class="fw-bold d-flex align-items-center mb-2"><img></div>
-                    <p class="text-muted">One Clean-Up A Day Keeps, The End Of The World Away!</p>
+                    <p class="text-muted">One Clean-Up A Day, Keeps The End Of The World Away!</p>
                 </div>
 
             </div>
@@ -203,6 +233,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdn.reflowhq.com/v2/toolkit.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
@@ -212,12 +243,8 @@
     <script src="assets/js/shopping-cart.js"></script>
     <script src="assets/js/shopping-cart2.js"></script>
     <script src="assets/js/wishlist.js"></script>
-    <script src="assets/js/search.js"></script>
-   
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="javaScript/signUp.js"></script>
+    <script src="./product.js"></script>
+    <script src="./about.js"></script>
 </body>
 
 </html>
