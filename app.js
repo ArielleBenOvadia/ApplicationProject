@@ -26,33 +26,25 @@ const mongoConnect = () =>
   });
 };
 
-app.listen(3000,()=>{
-  console.log('Connect to Server');
-  mongoConnect()
-}) 
+const server = app.listen(3000, () => {
+  console.log('Server is running on port 3000');
+  mongoConnect();
+});
 
-// const server = app.listen(3000,()=>{
-//     console.log('Connect to Server');
-//     mongoConnect()
-// }) 
+const io = require('socket.io')(server, {
+  cors: { origin: "*" }
+});
 
-// const io = require('socket.io')(server, {
-//   cors: { origin: "*" }
-// });
-// io.on('connection', async function(socket){
+io.on('connection', (socket) => {
+  UsersOnline++;
+  io.emit('usercnt', UsersOnline);
 
-//   UsersOnline++;
-//   socket.on('login', function(data){
-//     // saving userId to object with socket ID
-//   });
-//   socket.on('createPromoCode', function(data) {
+  socket.on('disconnect', () => {
+    UsersOnline--;
+    io.emit('usercnt', UsersOnline);
+  });
+});
 
-//     io.emit('promoCodeCreated', { message: 'Promo code has been created successfully.' });
-//   });
-//   io.emit('usercnt',UsersOnline);
-//   socket.on('disconnect', function(){
-//     UsersOnline--;
-//     io.emit('usercnt',UsersOnline);
 
-//   });
-// });
+
+

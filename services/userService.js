@@ -1,13 +1,17 @@
 const { error } = require("console");
 const User = require("../models/userSchema");
 
-const getUserByData = async (data) => {
-  const email = data.email
-  const myPassword = data.password
+const getUserByData = async (email, password) => {
   const user = await User.findOne({ email: email });
-  if(myPassword === user.password)
-      return user;
-    // Handle Error
+  if (!user) {
+    return null; // Handle user not found
+  }
+  
+  if (password === user.password) {
+    return user;
+  } else {
+    return null; // Handle incorrect password
+  }
 };
 
 const getUserById = async (id) => {

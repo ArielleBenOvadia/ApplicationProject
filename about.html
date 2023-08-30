@@ -26,6 +26,9 @@
 
 <body>
     <nav class="navbar navbar-light navbar-expand-md sticky-top navbar-shrink py-3" id="mainNav">
+        <div id="UsersOnline" class="UsersOnline">
+            <span id="UsersCount">There is 0 Users online</span>
+          </div>
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <img class="logo-nav" src="assets\img\brands\logo.png">  
@@ -300,7 +303,8 @@
     <script src="assets/js/shopping-cart.js"></script>
     <script src="assets/js/shopping-cart2.js"></script>
     <script src="assets/js/wishlist.js"></script>
-    <script src="./about.js"></script>
+    <script src="https://cdn.socket.io/socket.io-3.0.1.min.js"></script>
+    <script src="about.js"></script>
     <script
     src="https://www.bing.com/api/maps/mapcontrol?key=AibVOH9oAMjGLOYazVGOTqSEp3pnWAABUMKKlWLVEwRr81ilXESczhzC6uVYAtEr&callback=initMap"
     async

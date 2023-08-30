@@ -67,3 +67,5 @@ function fetchProduct() {
 $(document).ready(function () {
     fetchProduct();
 });
+
+

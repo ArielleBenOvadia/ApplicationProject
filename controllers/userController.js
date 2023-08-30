@@ -11,20 +11,6 @@ const getUserById = async (req, res, next) => {
   }
 };
 
-const getUserByData = async (req, res, next) => {
-  try {
-    const { data } = req.params;
-    const user = await userService.getUserByData(data);
-    if (user) {
-      res.status(200).send(user);
-    } else {
-      res.status(400).send(null);
-    }
-  } catch (err) {
-    res.status(400).send("Something went wrong -> getUserByEmail");
-  }
-};
-
 const getAllUsers = async (req, res, next) => {
   try {
     const users = await userService.getAll();
@@ -54,6 +40,20 @@ const deleteUser = async (req, res, next) => {
     res.status(200).send(user);
   } catch (err) {
     res.status(400).send("Something went wrong -> deleteUser");
+  }
+};
+
+const getUserByData = async (req, res, next) => {
+  try {
+    const { email , password } = req.body;
+    const user = await userService.getUserByData(email,password);
+    if (user) {
+      res.status(200).send(user);
+    } else {
+      res.status(401).send(null);
+    }
+  } catch (err) {
+    res.status(400).send("Something went wrong -> getUserByData");
   }
 };
 

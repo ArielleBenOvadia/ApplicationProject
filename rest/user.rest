@@ -36,15 +36,12 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3000/user/data
+POST http://localhost:3000/user/login
 Content-Type: application/json
 
-{
-    "data":{
-    "email":"ofek@ofek",
-    "password":"1234"
-    }
-    
+{ 
+   "email":"ofek@ofek",
+   "password":"1234"   
 }
 
 ###

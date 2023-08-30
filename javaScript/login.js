@@ -1,38 +1,32 @@
 
-$(document).ready(function () { 
-    $("#loginForm").submit(function (event) {
-      console.log("i am here");
-      event.preventDefault();
-  
-      const email = document.getElementById("emailLogin").value;
-      const password = document.getElementById("passwordLogin").value;
-
-      var data = {
-        email: email,
-        password: password,
-      };
-  
-      $.ajax({
-        url: "http://localhost:3000/user/data",
-        type: "POST",
-        data: data,
-        success: function (response) {   
-          if (response == "OK") {           
-            window.location.href = "index.html";
-            return;
-          } else {
-            alert("Invalid email or password");
-            return;
-          }
-        },
-        error: function (xhr, status, error) {
-          if (xhr.status == 401) {
-            alert("Invalid email or password");
-          }         
-          console.error(error);
-        },
-      });
+$(document).ready(function () {
+  $("#loginForm").submit(function (event) {
+    event.preventDefault();
+    const email = $("#emailLogin").val();
+    const password = $("#passwordLogin").val();
+    $.ajax({
+      url: "http://localhost:3000/user/login",
+      type: "POST",
+      contentType: "application/json",
+      data: JSON.stringify({
+        email,
+        password
+      }),
+      success: function (response, status, xhr) {
+        if (xhr.status === 200) {
+          // Handle successful login
+          window.location.href = "index.html";
+        } else {
+          alert("Invalid email or password");
+        }
+      },
+      error: function (xhr, status, error) {
+        if (xhr.status === 401) {
+          alert("Invalid email or password");
+        } else {
+          alert("An error occurred: " + error);
+        }
+      },
     });
-  })
-
- 
+  });
+});
