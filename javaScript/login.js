@@ -1,6 +1,7 @@
 
-function loginForm() {   
-    $("#loginform").submit(function (event) {
+$(document).ready(function () { 
+    $("#loginForm").submit(function (event) {
+      console.log("i am here");
       event.preventDefault();
   
       const email = document.getElementById("emailLogin").value;
@@ -32,8 +33,6 @@ function loginForm() {
         },
       });
     });
-  }
+  })
 
-  $(document).ready(function () {
-    loginForm();
-  });
+ 
