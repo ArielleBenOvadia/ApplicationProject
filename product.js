@@ -44,6 +44,23 @@ function fetchProduct() {
   });
 }
 
+async function addToCart(id) {
+
+  // take cart item from the cookie
+  let cart = localStorage.getItem("cart");
+
+  if (cart) {
+    cart = cart + "," + id;
+    alert("Game added to cart");
+  } else {
+    cart = id;
+    alert("Game added to cart");
+  }
+
+  localStorage.setItem("cart", cart);
+}
+
+
 $(document).ready(function () {
   fetchProduct();
 });
