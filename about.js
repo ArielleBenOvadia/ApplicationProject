@@ -40,3 +40,12 @@ function addMarker(map, lat, lng) {
   var pushpin = new Microsoft.Maps.Pushpin(location, null);
   map.entities.push(pushpin);
 }
+
+const socket = io.connect('http://127.0.0.1:3000');
+
+// Emit 'login' event when the page loads
+socket.emit('login', { userId: 'YourUserID' });
+
+socket.on('usercnt', (msg) => {
+  document.getElementById('UsersCount').innerHTML = "There are " + msg + " Users online";
+});

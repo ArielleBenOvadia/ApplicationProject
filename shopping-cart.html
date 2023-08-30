@@ -25,43 +25,48 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-md sticky-top navbar-shrink py-3" id="mainNav">
-      <div class="container">
+  <nav class="navbar navbar-light navbar-expand-md sticky-top navbar-shrink py-3" id="mainNav">
+    <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="index.html">
-          <img class="logo-nav" src="assets\img\brands\logo.png">
+            <img class="logo-nav" src="assets\img\brands\logo.png">  
         </a>
-            <div class="collapse navbar-collapse" id="navcol-1" style="margin-left: 43px;padding-left: 0px;">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html" style="text-shadow: 1px 1px 4px var(--bs-secondary-bg-subtle);">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html" style="text-shadow: 1px 1px 4px var(--bs-secondary-bg-subtle);">About</a></li>
-                    <!-- <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="about.html" style="text-shadow: 1px 1px 4px var(--bs-secondary-bg-subtle);">About</a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
-                    </li> -->
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="products.html" style="text-shadow: 1px 1px 4px var(--bs-secondary-bg-subtle);">Products</a>
-                        <div class="dropdown-menu">
-                            <a 
-                                class="dropdown-item" 
-                                href="bottles.html">Reusable Bottles
-                            </a>
-                            <a 
-                                class="dropdown-item" 
-                                href="cups.html">Reusable Cups
-                            </a>
-                            <a 
-                                class="dropdown-item" 
-                                href="straws.html">Reusable Straws
-                            </a>
-                            <a 
-                                class="dropdown-item" 
-                                href="accessories.html">Accessories
-                            </a>
-                            <a 
-                                class="dropdown-item" 
-                                href="your-design.html" 
-                                style="transition: none 0s ease 0s;">Create Your Own Design
-                            </a>
-                        </div>
-                    </li>
+        <div class="collapse navbar-collapse" id="navcol-1" style="margin-left: 43px;padding-left: 0px;">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html" style="text-shadow: 1px 1px 4px var(--bs-secondary-bg-subtle);">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html" style="text-shadow: 1px 1px 4px var(--bs-secondary-bg-subtle);">About</a></li>
+                <!-- <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="about.html" style="text-shadow: 1px 1px 4px var(--bs-secondary-bg-subtle);">About</a>
+                    <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                </li> -->
+                <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="products.html" style="text-shadow: 1px 1px 4px var(--bs-secondary-bg-subtle);">Products</a>
+                    <div class="dropdown-menu">
+                        <a 
+                            class="dropdown-item" href="#"
+                            onclick="CategoryPage('bottles')">Reusable Bottles
+                        </a>
+                        <a 
+                            class="dropdown-item" 
+                            href="#" onclick="CategoryPage('cups')"
+                            >Reusable Cups
+                        </a>
+                        <a 
+                            class="dropdown-item" 
+                            href="#"
+                            onclick="CategoryPage('straws')"
+                            >Reusable Straws
+                        </a>
+                        <a 
+                            class="dropdown-item" 
+                            href="#"
+                            onclick="CategoryPage('acessories')"
+                            >Accessories
+                        </a>
+                        <a 
+                            class="dropdown-item" 
+                            href="your-design.html" 
+                            style="transition: none 0s ease 0s;">Create Your Own Design
+                        </a>
+                    </div>
+                </li>
                     <li class="nav-item"><a class="nav-link" href="team.html" style="text-shadow: 1px 1px 4px var(--bs-secondary-bg-subtle);">Team</a></li>
                     <li class="nav-item"><a class="nav-link" href="contacts.html" style="text-shadow: 1px 1px 4px var(--bs-secondary-bg-subtle);">Contact Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="signup.html" style="margin-right: 10px;text-shadow: 1px 1px 4px var(--bs-secondary-bg-subtle);">Sign up</a></li>

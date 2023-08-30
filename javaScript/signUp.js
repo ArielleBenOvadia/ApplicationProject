@@ -1,38 +1,31 @@
-myButton.addEventListener('click', signUpForm);
-
-function signUpForm() { 
+$(document).ready(function () {
     $("#modalSignUp").submit(function (event) {
-        event.preventDefault();
-      const email = document.getElementById("emailSignUp").value;
-      const password = document.getElementById("passwordSignUp").value;
-
-      var data = {
-        email: email,
-        password: password,       
-      };
-  
+      event.preventDefault();
+      const email = $("#emailSignUp").val();
+      const password = $("#passwordSignUp").val();
       $.ajax({
         url: "http://localhost:3000/user/create",
         type: "POST",
-        data: data,
-        success: function (response) {
-          if (response == "OK") {
+        contentType: "application/json",
+        data: JSON.stringify({
+          email,
+          password
+        }),
+        success: function (response, status, xhr) {
+          if (xhr.status === 200) {
+            // Handle successful registration
             window.location.href = "index.html";
-            return;
           } else {
             alert("Invalid email or password");
-            return;
           }
         },
-        error: function (xhr, status, error) {   
-          if (xhr.status == 401) {
+        error: function (xhr, status, error) {
+          if (xhr.status === 401) {
             alert("Invalid email or password");
-          }          
-          console.error(error);
+          } else {
+            alert("An error occurred: " + error);
+          }
         },
       });
     });
-}
-$(document).ready(function () {
-    signUpForm();
   });
