@@ -103,7 +103,7 @@ $(document).ready(function () {
     });}
 
  $.ajax({
-        url: "http://localhost:3000/product/name/" + name,
+        url: "http://localhost:3000/product/name/" + name1,
         method: "GET",
         success: function (response) {     
           var myId = response._id;
